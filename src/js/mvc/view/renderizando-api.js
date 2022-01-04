@@ -1,13 +1,13 @@
 
 function resultadoApi(apiResposta){
     $('#slide-container').css('display', 'none')
-    $('#infoFilme').css('display', 'flex')
+    $('#section-info').css('display', 'flex')
     $('#tituloFilme').html(`${apiResposta.Title}`)
     $('#diretor').html(`Diretor: ${apiResposta.Director}`)
     $('#ano').html(`Ano: ${apiResposta.Year}`)
     $('#duracao').html(`Duração: ${apiResposta.Runtime}`)
     $('#historia').html(`Sinopse: ${apiResposta.Plot}`)
-    $('#poster').html(`<img src="${apiResposta.Poster}">`)
+    $('#poster').attr('src', `${apiResposta.Poster}`)
 }
 
 function apiErro(error){

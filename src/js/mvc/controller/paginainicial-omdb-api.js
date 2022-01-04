@@ -11,8 +11,22 @@ function apiFilme(nomeFilme){
     if(nomeFilme ){
         const url = `https://www.omdbapi.com/?apikey=284df65c&t=${nomeFilme}`
         const options = {
-            method: 'GET'
+            method: 'GET', 
+            mode: 'cors', 
+            redirect: 'follow',
+            cache: 'default'
         }
+        fetch(url, _options)
+            .then(function(response) {
+                if(!response.ok) throw new Error('Erro ao digitar filme');
+                return response.json();
+            })
+            
+            .then(function(data) {
+                let newContent = ''
+            })
+    }else {
+        alert('Digite o nome de um filme!')
     }
 }
 
