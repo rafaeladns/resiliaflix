@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+body,html{
+    color:white;
+    background-color: rgb(8, 8, 8);
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/*Alterar a cor da fonte do <a> da navbar*/
+#header{
+    background-color:#1C1C1C;
+
+}
+.cor-fonte{
+    color: white!important;
+}
+
+ .cor-fonte:hover{
+    color: #FFD000!important;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+/*Altera a cor do sanduiche menu de navegação mobile*/
+.navbar-light .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   }
+
+
+   .bg-primary-color{
+    background-color: #FFF;
+}
+
+.bg-secondary-color{
+    background-color: #ece8ea;
+}
+
+/* Estilização da descrição do corpo */
+#main{
+    height: 70%;
+    background-image: url(./img/netflixescuro.png);
+    background-repeat: no-repeat;
+}
+
+.texto-main {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.div-input{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#pesquisa{
+    display: flex;
+
+}
+#pesquisa-input{
+    border-radius: 2px solid;
+    height: 40px;
+    margin: 10px;
+}
+.btn{
+    color: black;
+    background-color: rgb(250, 208, 0);
+    border-radius: 2px solid;
+    margin: 10px;
+    height: 40px;
+    width: 60%;
+}
+
+.contentMain{
+    height: 40%;
+    background-image: url(../img/darkbg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.rodape{
+    padding: 1%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+#contato{
+    color: rgb(250, 208, 0);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    transition: 1s;
+}
+#contato:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.filme_lista{
+    display: flex !important;
+    justify-content: space-around;
+    padding: 10px;
+}
+.list-content{
+    height: 50%;
+}
+
+
+
+#infoFilme{
+  display: none;
+  margin: 0;
+  height: 80%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+#infoContainer{
+  width: 30%;
+}
+ 
+  .btn-outline-success:hover {
+    background-color: #212f45;
+  }
+  
+  .btn-custom-round {
+    padding: 5px 9px !important;
+  }
+  
+  .list-content {
+    margin-top: 5%;
+  }
+  
+  .filme_lista {
+    list-style: none;
+    display: block;
+    border: 1px solid transparent;
+  }
+  
+  .filme {
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow: auto;
+    border: 1px solid transparent;
+    background-size: cover;
+  }
+  
+  
+ 
+  
+  
+  .col-12 {
+    text-align: center;
+  }
+  
+  .filme_info {
+    background-color: #171717;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    transform: scale(0);
+  }
+  
+  .filme_info .col-12 {
+    margin-top: 5px;
+  }
+  
+  .filme_info .col12:first-child {
+    margin-bottom: 20px;
+  }
+  
+  .filme_info p {
+    color: #7e7b7b;
+    font-size: 12px;
+  }
+  
+  section {
+    margin-bottom: -100px;
+    position: relative;
+    width: 100%;
+  }
+  
+ 
+
+  .img-fluid{
+    height: 250px;
+    width: 200px;
+  }
+
+  .img-fluid:hover{
+    transition: all 0.5s;
+    cursor: pointer;
+    opacity: .7;
+    transform: translate(0,0);
+    
+  }
+
+  @media (max-width:900px) {
+    body{
+    height: auto;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    }
+    #header-nav{
+        flex-direction: column;
+        position: static;
+    }
+    #header-container{
+        flex-direction: column;
+    }
+    #nav-container{
+        flex-direction: column;
+    }
+    #nav-buttons{
+        flex-direction: column;
+        width: 80%;
+    }
+    #contentMain{
+        height: auto;
+    }
+    .filme_lista{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .filme{
+      width: 100%;
+      margin: 0%;
+      padding: 0%;
+    }
+    .filme:first-child{
+      margin: 0%;
+    }
+    .row{
+      padding-top: 50px !important;
+    }
+  
+  .rodape{
+    
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  #infoFilme {
+    margin-top: 10%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  #infoContainer{
+    width: 80%;
+    text-align: center;
+  }
+}
+
+/*Alterações recentes*/
+.titulo{
+    padding: 20px;
+}
+
+.titulo:hover{
+    text-decoration: underline #FFD000;
+    cursor: pointer;
+}
+
+
+/*Botão*/
+.botao-filme{
+    background-color: transparent;
+    border: #FFD000 1px solid!important;
+    color:#FFD000!important;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    width: 60%;
+    height: 35px;
+}
+
+.botao-filme:hover{
+    border: black 1px solid!important;
+    background-color:#FFD000!important;
+    color: black!important;
+
+}
+
+.nome-filme{
+    padding-top: 10px;
+}
+
+.rodape{
+    background-color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#contato{
+    background-color: rgb(8, 8, 8);
+    color: rgb(250, 208, 0);
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Roboto', cursive;
+    text-align: center;
+}
+
+.container-carrossel{
+  padding: 30px;
+}
+
+.img-carrossel{
+  border-radius: 5px;
+}
