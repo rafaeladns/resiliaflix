@@ -334,3 +334,7 @@ body,html{
 .img-carrossel{
   border-radius: 5px;
 }
+
+#section-info{
+  display: none;
+}

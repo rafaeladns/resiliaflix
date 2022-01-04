@@ -53,6 +53,18 @@
     <!--Carrossel imagens de filmes-->
 
     <div class="container-carrossel container" id="slide-container">
+        <section id="section-info">
+            <div id="infoFilme">
+                <img src="" alt="Banner Filme">
+                <h2 id="tituloFilme"></h3>
+                <h3 id="ano"></h3>
+                <h3 id="diretor"></h3>
+                <h3 id="historia"></h3>
+                <h3 id="duracao"></h3>
+              
+                
+            </div>
+        </section>
         <div class="carousel slide" id="slider" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
@@ -118,7 +130,7 @@
                         </div>
                     </li>
 
-                    <li class="filme"  onclick="apiFilme('Pantera Negra')">
+                    <li class="filme"  onclick="apiFilme('Black Panther')">
                         <img class="img-fluid"  src="./src/img/pantera.jpg">
                         <p class="nome-filme">Pantera Negra</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -152,7 +164,7 @@
                         </div>
                     </li>
 
-                    <li class="filme" onclick="apiFilme('Coringa')">
+                    <li class="filme" onclick="apiFilme('Joker')">
                         <img class="img-fluid" src="./src/img/coringa.jpg" />
                         <p class="nome-filme">Coringa</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -170,7 +182,7 @@
                     </li>
 
                     
-                    <li class="filme" onclick="apiFilme('Vingadores')">
+                    <li class="filme" onclick="apiFilme('Avengers Endgame')">
                         <img class="img-fluid" src="./src/img/vingadores.jpg" />
                         <p class="nome-filme">Vingadores</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -238,7 +250,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('Duro de matar')">
+                        <li class="filme" onclick="apiFilme('Die Hard')">
                             <img class="img-fluid" src="./src/img/durodematar.jpg" />
                             <p class="nome-filme">Duro de Matar</p>
                             <button class="botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -255,7 +267,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('Gladiador')">
+                        <li class="filme" onclick="apiFilme('Gladiator')">
                             <img class="img-fluid" src="./src/img/gladiador.jpg" />
                             <p class="nome-filme">Gladiador</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -273,7 +285,7 @@
                         </li>
     
                         
-                        <li class="filme" onclick="apiFilme('Bastardos Inglórios')">
+                        <li class="filme" onclick="apiFilme('Inglourious Basterds')">
                             <img class="img-fluid" src="./src/img/bastardosinglorios.jpg" />
                             <p class="nome-filme">Bastardos Inglórios</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -324,7 +336,7 @@
                             </div>
                         </li>
     
-                        <li class="filme"  onclick="apiFilme('Sexta Feira 13')">
+                        <li class="filme"  onclick="apiFilme('Friday the 13th')">
                             <img class="img-fluid"  src="./src/img/sextafeira13.jpg">
                             <p class="nome-filme">Sexta Feira 13</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -341,7 +353,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('O Sexto Sentido')">
+                        <li class="filme" onclick="apiFilme('The Sixth Sense')">
                             <img class="img-fluid" src="./src/img/sextosentido.jpg" />
                             <p class="nome-filme">O Sexto Sentido</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -358,7 +370,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('O Exorcismo de Emily Rose')">
+                        <li class="filme" onclick="apiFilme('The Exorcism of Emily Rose')">
                             <img class="img-fluid" src="./src/img/oexorcismo.jpg" />
                             <p class="nome-filme">O exorcismo de Emily Rose</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -376,7 +388,7 @@
                         </li>
     
                         
-                        <li class="filme" onclick="apiFilme('Tubarão')">
+                        <li class="filme" onclick="apiFilme('Jaws')">
                             <img class="img-fluid" src="./src/img/tubarão.jpg" />
                             <p class="nome-filme">Tubarão</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -385,9 +397,6 @@
                             <div class="filme_info">
                                 <div class="col-12">
     
-                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                        <span class="mdi mdi-information-variant"></span>
-                                    </a>
                                     <p>Tubarão</p>
                                 </div>
                             </div>
@@ -399,9 +408,7 @@
         
     </div>
 
-    <div>
-
-    </div>
+    
 
     <footer class="rodape">
         <a id="contato" href="">&copy; Copyright - Resilia 2021 T11</a>
@@ -409,16 +416,15 @@
  
    
   
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous">
+    </script>
+
     <script src="src/js/mvc/controller/paginainicial-omdb-api.js"></script>
     <script src="src/js/mvc/model/requisicaoapi.js"></script>
     <script src="src/js/mvc/view/renderizando-api.js"></script>
-    
+
 </body>
 </html>
