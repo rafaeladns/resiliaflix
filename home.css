@@ -26,6 +26,20 @@ body,html{
     align-items: center;
 }
 
+.img-corpo{
+    display: flex;
+    padding-right: 150px;
+   
+   
+}
+
+#img-texto{
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 320px;
+}
+
 /*Container texto descritivo planos*/
 .main-container{
     height: 95%;
@@ -101,52 +115,6 @@ strong{
     text-align: center;
 }
 
-@media (max-width:900px) {
-    body{
-    height: 100%;
-    width: 100%;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-    }
-    
-    #header-nav{
-        flex-direction: column;
-        position: static;
-    }
-    #header-container{
-        flex-direction: column;
-    }
-    #nav-container{
-        flex-direction: column;
-    }
-    #nav-buttons{
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .main{
-        width: 100%;
-    }
-    .container-cards{
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .cards{
-        width: 100%;
-    }
-    .main-container{
-
-        flex-direction: column;
-        
-    }
-    .texto-corpo {
-        width: 80%;
-        text-align: center;
-    }
-} */
-
 /*Alterar a cor da fonte do <a> da navbar*/
 #header{
     background-color:#1C1C1C;
@@ -206,3 +174,66 @@ h5{
     text-align:center;
 }
 
+@media only screen and (max-width: 600px) {
+    body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    }
+
+    h1{
+        font-size: 1.0rem;
+        font-weight: bold;
+    }
+
+    h4{
+        font-size: 1.0rem;
+    }
+
+    .p-inicial{
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+   #img-texto{
+       display: none;
+   }
+
+    #header-nav{
+        flex-direction: column;
+        position: static;
+    }
+    #header-container{
+        flex-direction: column;
+    }
+    #nav-container{
+        flex-direction: column;
+    }
+    #nav-buttons{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .main{
+        width: 100%;
+    }
+    .container-cards{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .cards{
+        width: 100%;
+    }
+    .main-container{
+
+        flex-direction: column;
+        
+    }
+    .texto-corpo {
+        width: 80%;
+        text-align: center;
+    }
+}

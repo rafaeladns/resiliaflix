@@ -14,7 +14,7 @@
         <!--Navbar e nav-links do cabeçalho-->
         <nav class=" navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-              <img src="./img/logo-resiliaflix.svg" alt="Logo ResiliaFlix"><a class="navbar-brand" href="#"></a>
+              <img src="./src/img/logo-resiliaflix.svg" alt="Logo ResiliaFlix"><a class="navbar-brand" href="#"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -31,8 +31,8 @@
 
                     <div class="div-input">
                         <div id="pesquisa">
-                            <input class="form-control mr-sm-2" id="pesquisa-input" type="search" placeholder="Digite um filme" aria-label="Search">
-                            <button class="btn btn-outline-warning botao-pesquisar" id="pesquisaBotao" type="button">Pesquisar</button>
+                            <input class="form-control mr-sm-2" id="input-pesquisa" type="search" placeholder="Digite um filme" aria-label="Search">
+                            <button class="btn btn-outline-warning botao-pesquisar" id="botaoPesquisar" type="button">Pesquisar</button>
                         </div>
                     </div>
                     
@@ -61,17 +61,17 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/carossel1.png" alt="Casa 1" class="img-carrossel d-block w-100">
+                    <img src="./src/img/carossel1.png" alt="Filme 1" class="img-carrossel d-block w-100">
                     <div class="carousel-caption"></div>
                 </div>
                 
                 <div class="carousel-item">
-                    <img src="img/carrossel2.png" alt="Casa 2" class="img-carrossel img-carrossel d-block w-100">
+                    <img src="./src/img/carrossel2.png" alt="Filme  2" class="img-carrossel img-carrossel d-block w-100">
                     <div class="carousel-caption"></div>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="img/carrossel3.png" alt="Casa 3" class="d-block w-100">
+                    <img src="./src/img/carrossel3.png" alt="Filme 3" class="d-block w-100">
                     <div class="carousel-caption"></div>
                 </div>
 
@@ -101,8 +101,8 @@
             <div class="col-12">
                 <ul class="filme_lista">
 
-                    <li class="filme" onclick="apiFilme('Homem aranha')">
-                        <img class="img-fluid"src="./img/homemaranha.jpg" />
+                    <li class="filme" onclick="apiFilme('SpiderMan Homecoming')">
+                        <img class="img-fluid"src="./src/img/homemaranha.jpg" />
                         <p class="nome-filme">Homem aranha</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             SINOPSE
@@ -119,7 +119,7 @@
                     </li>
 
                     <li class="filme"  onclick="apiFilme('Pantera Negra')">
-                        <img class="img-fluid"  src="./img/pantera.jpg">
+                        <img class="img-fluid"  src="./src/img/pantera.jpg">
                         <p class="nome-filme">Pantera Negra</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             SINOPSE
@@ -136,7 +136,7 @@
                     </li>
 
                     <li class="filme" onclick="apiFilme('Thor Ragnarok')">
-                        <img class="img-fluid" src="./img/thor.jpg" />
+                        <img class="img-fluid" src="./src/img/thor.jpg" />
                         <p class="nome-filme">Thor Ragnarok</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             SINOPSE
@@ -153,7 +153,7 @@
                     </li>
 
                     <li class="filme" onclick="apiFilme('Coringa')">
-                        <img class="img-fluid" src="./img/coringa.jpg" />
+                        <img class="img-fluid" src="./src/img/coringa.jpg" />
                         <p class="nome-filme">Coringa</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             SINOPSE
@@ -171,7 +171,7 @@
 
                     
                     <li class="filme" onclick="apiFilme('Vingadores')">
-                        <img class="img-fluid" src="./img/vingadores.jpg" />
+                        <img class="img-fluid" src="./src/img/vingadores.jpg" />
                         <p class="nome-filme">Vingadores</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             SINOPSE
@@ -188,209 +188,215 @@
                     </li>
                 </ul>
             </div>
+        </div>
         </section>
+
+        <div class="lista-filmes">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class= "titulo"><strong>Ação</strong></h3>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-12">
+                    <ul class="filme_lista">
+    
+                        <li class="filme" onclick="apiFilme('Matrix')">
+                            <img class="img-fluid"src="./src/img/matrix1.jpg" />
+                            <p class="nome-filme">Matrix</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            
+                            <div class="filme_info">
+                                <div class="col-12">
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Matrix</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="filme"  onclick="apiFilme('John Wick')">
+                            <img class="img-fluid"  src="./src/img/johnwick.jpg">
+                            <p class="nome-filme">John Wick</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            
+                            <div class="filme_info">
+                                <div class="col-12">
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>John Wick</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="filme" onclick="apiFilme('Duro de matar')">
+                            <img class="img-fluid" src="./src/img/durodematar.jpg" />
+                            <p class="nome-filme">Duro de Matar</p>
+                            <button class="botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            <div class="filme_info">
+                                <div class="col-12">
+    
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Duro de Matar</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="filme" onclick="apiFilme('Gladiador')">
+                            <img class="img-fluid" src="./src/img/gladiador.jpg" />
+                            <p class="nome-filme">Gladiador</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            <div class="filme_info">
+                                <div class="col-12">
+    
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Gladiador</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        
+                        <li class="filme" onclick="apiFilme('Bastardos Inglórios')">
+                            <img class="img-fluid" src="./src/img/bastardosinglorios.jpg" />
+                            <p class="nome-filme">Bastardos Inglórios</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            <div class="filme_info">
+                                <div class="col-12">
+    
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Bastardos Inglórios</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
         
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class= "titulo"><strong>Ação</strong></h3>
+        <div class="lista-filmes">
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class= "titulo"><strong>Terror</strong></h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="col-12">
-                <ul class="filme_lista">
-
-                    <li class="filme" onclick="apiFilme('Matrix')">
-                        <img class="img-fluid"src="./img/matrix1.jpg" />
-                        <p class="nome-filme">Matrix</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
+                
+                <div class="col-12">
+                    <ul class="filme_lista">
+    
+                        <li class="filme" onclick="apiFilme('Carrie')">
+                            <img class="img-fluid"src="./src/img/carrie.jpg" />
+                            <p class="nome-filme">Carrie, a estranha</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            
+                            <div class="filme_info">
+                                <div class="col-12">
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Carrie, a estranha</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="filme"  onclick="apiFilme('Sexta Feira 13')">
+                            <img class="img-fluid"  src="./src/img/sextafeira13.jpg">
+                            <p class="nome-filme">Sexta Feira 13</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            
+                            <div class="filme_info">
+                                <div class="col-12">
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Sexta Feira 13</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="filme" onclick="apiFilme('O Sexto Sentido')">
+                            <img class="img-fluid" src="./src/img/sextosentido.jpg" />
+                            <p class="nome-filme">O Sexto Sentido</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            <div class="filme_info">
+                                <div class="col-12">
+    
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>O Sexto Sentido</p>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li class="filme" onclick="apiFilme('O Exorcismo de Emily Rose')">
+                            <img class="img-fluid" src="./src/img/oexorcismo.jpg" />
+                            <p class="nome-filme">O exorcismo de Emily Rose</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            <div class="filme_info">
+                                <div class="col-12">
+    
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>O Exorcismo de Emily Rose</p>
+                                </div>
+                            </div>
+                        </li>
+    
                         
-                        <div class="filme_info">
-                            <div class="col-12">
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Matrix</p>
+                        <li class="filme" onclick="apiFilme('Tubarão')">
+                            <img class="img-fluid" src="./src/img/tubarão.jpg" />
+                            <p class="nome-filme">Tubarão</p>
+                            <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                                SINOPSE
+                              </button>
+                            <div class="filme_info">
+                                <div class="col-12">
+    
+                                    <a href="#" class="btn-custom-round btn btn-light rounded-circle">
+                                        <span class="mdi mdi-information-variant"></span>
+                                    </a>
+                                    <p>Tubarão</p>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-
-                    <li class="filme"  onclick="apiFilme('John Wick')">
-                        <img class="img-fluid"  src="./img/johnwick.jpg">
-                        <p class="nome-filme">John Wick</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        
-                        <div class="filme_info">
-                            <div class="col-12">
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>John Wick</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="filme" onclick="apiFilme('Duro de matar')">
-                        <img class="img-fluid" src="./img/durodematar.jpg" />
-                        <p class="nome-filme">Duro de Matar</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        <div class="filme_info">
-                            <div class="col-12">
-
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Duro de Matar</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="filme" onclick="apiFilme('Gladiador')">
-                        <img class="img-fluid" src="./img/gladiador.jpg" />
-                        <p class="nome-filme">Gladiador</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        <div class="filme_info">
-                            <div class="col-12">
-
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Gladiador</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    
-                    <li class="filme" onclick="apiFilme('Bastardos Inglórios')">
-                        <img class="img-fluid" src="./img/bastardosinglorios.jpg" />
-                        <p class="nome-filme">Bastardos Inglórios</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        <div class="filme_info">
-                            <div class="col-12">
-
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Bastardos Inglórios</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h3 class= "titulo"><strong>Terror</strong></h3>
-                    </div>
+                        </li>
+                    </ul> 
                 </div>
-            </div>
-            
-            <div class="col-12">
-                <ul class="filme_lista">
-
-                    <li class="filme" onclick="apiFilme('Carrie')">
-                        <img class="img-fluid"src="./img/carrie.jpg" />
-                        <p class="nome-filme">Carrie, a estranha</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        
-                        <div class="filme_info">
-                            <div class="col-12">
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Carrie, a estranha</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="filme"  onclick="apiFilme('Sexta Feira 13')">
-                        <img class="img-fluid"  src="./img/sextafeira13.jpg">
-                        <p class="nome-filme">Sexta Feira 13</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        
-                        <div class="filme_info">
-                            <div class="col-12">
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Sexta Feira 13</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="filme" onclick="apiFilme('O Sexto Sentido')">
-                        <img class="img-fluid" src="./img/sextosentido.jpg" />
-                        <p class="nome-filme">O Sexto Sentido</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        <div class="filme_info">
-                            <div class="col-12">
-
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>O Sexto Sentido</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="filme" onclick="apiFilme('O Exorcismo de Emily Rose')">
-                        <img class="img-fluid" src="./img/oexorcismo.jpg" />
-                        <p class="nome-filme">O exorcismo de Emily Rose</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        <div class="filme_info">
-                            <div class="col-12">
-
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>O Exorcismo de Emily Rose</p>
-                            </div>
-                        </div>
-                    </li>
-
-                    
-                    <li class="filme" onclick="apiFilme('Tubarão')">
-                        <img class="img-fluid" src="./img/tubarão.jpg" />
-                        <p class="nome-filme">Tubarão</p>
-                        <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                            SINOPSE
-                          </button>
-                        <div class="filme_info">
-                            <div class="col-12">
-
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Tubarão</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul> 
-            </div>
-        </section>
+            </section>
+        </div>
+        
     </div>
 
     <div>
@@ -410,5 +416,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
         integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
         crossorigin="anonymous"></script>
+    <script src="src/js/mvc/controller/paginainicial-omdb-api.js"></script>
+    <script src="src/js/mvc/model/requisicaoapi.js"></script>
+    <script src="src/js/mvc/view/renderizando-api.js"></script>
+    
 </body>
 </html>
