@@ -14,7 +14,7 @@ body,html{
 /* Estilização da descrição do corpo */
 #main{
     height: 95%;
-    background-image: url(./img/netflixescuro.png);
+    background-image: url(./src/img/netflixescuro.png);
     background-repeat: no-repeat;
 }
 
