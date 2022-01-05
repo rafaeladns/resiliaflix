@@ -1,6 +1,8 @@
 
 function resultadoApi(apiResposta){
     $('#slide-container').css('display', 'none')
+    $('#main').css('display', 'none')
+    $('#rodape').css('display', 'none')
     $('#section-info').css('display', 'flex')
     $('#tituloFilme').html(`${apiResposta.Title}`)
     $('#diretor').html(`Diretor: ${apiResposta.Director}`)

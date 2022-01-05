@@ -21,7 +21,7 @@
               <div class="div-menu collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="cor-fonte nav-link active cor-fonte" aria-current="page" href="#">Contato</a>
+                        <a class="cor-fonte nav-link active cor-fonte" aria-current="page" href="contato.html">Contato</a>
                     </li>
         
                     <li class="nav-item">
@@ -55,11 +55,16 @@
     <section id="section-info">
         <div id="infoFilme">
             <img src="" alt="Banner Filme" id="poster">
-            <h3 id="tituloFilme"></h3>
+
+            <div class="descricao-filme">
+                <h3 id="tituloFilme"></h3>
             <p id="ano"></p>
             <p id="diretor"></p>
             <p id="historia"></p>
             <p id="duracao"></p>
+            <a href="paginicial.html"><button id="botao-oculto">voltar</button></a>
+            </div>
+            
           
             
         </div>
@@ -113,24 +118,15 @@
             <div class="col-12">
                 <ul class="filme_lista">
 
-                    <li class="filme" onclick="apiFilme('SpiderMan Homecoming')">
-                        <img class="img-fluid"src="./src/img/homemaranha.jpg" />
-                        <p class="nome-filme">Homem aranha</p>
+                    <li class="filme" onclick="apiFilme('tt0451279')">
+                        <img class="img-fluid"src="https://br.web.img3.acsta.net/pictures/20/06/23/20/57/4275033.jpg" />
+                        <p class="nome-filme">Mulher Maravilha</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
                             SINOPSE
                           </button>
-                        
-                        <div class="filme_info">
-                            <div class="col-12">
-                                <a href="#" class="btn-custom-round btn btn-light rounded-circle">
-                                    <span class="mdi mdi-information-variant"></span>
-                                </a>
-                                <p>Homem aranha</p>
-                            </div>
-                        </div>
                     </li>
 
-                    <li class="filme"  onclick="apiFilme('Black Panther')">
+                    <li class="filme"  onclick="apiFilme('tt1825683')">
                         <img class="img-fluid"  src="./src/img/pantera.jpg">
                         <p class="nome-filme">Pantera Negra</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -147,7 +143,7 @@
                         </div>
                     </li>
 
-                    <li class="filme" onclick="apiFilme('Thor Ragnarok')">
+                    <li class="filme" onclick="apiFilme('tt3501632')">
                         <img class="img-fluid" src="./src/img/thor.jpg" />
                         <p class="nome-filme">Thor Ragnarok</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -164,7 +160,7 @@
                         </div>
                     </li>
 
-                    <li class="filme" onclick="apiFilme('Joker')">
+                    <li class="filme" onclick="apiFilme('tt7286456')">
                         <img class="img-fluid" src="./src/img/coringa.jpg" />
                         <p class="nome-filme">Coringa</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -182,7 +178,7 @@
                     </li>
 
                     
-                    <li class="filme" onclick="apiFilme('Avengers Endgame')">
+                    <li class="filme" onclick="apiFilme('tt4154796')">
                         <img class="img-fluid" src="./src/img/vingadores.jpg" />
                         <p class="nome-filme">Vingadores</p>
                         <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -216,7 +212,7 @@
                 <div class="col-12">
                     <ul class="filme_lista">
     
-                        <li class="filme" onclick="apiFilme('Matrix')">
+                        <li class="filme" onclick="apiFilme('tt0234215')">
                             <img class="img-fluid"src="./src/img/matrix1.jpg" />
                             <p class="nome-filme">Matrix</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -233,7 +229,7 @@
                             </div>
                         </li>
     
-                        <li class="filme"  onclick="apiFilme('John Wick')">
+                        <li class="filme"  onclick="apiFilme('tt2911666')">
                             <img class="img-fluid"  src="./src/img/johnwick.jpg">
                             <p class="nome-filme">John Wick</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -250,7 +246,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('Die Hard')">
+                        <li class="filme" onclick="apiFilme('tt0095016')">
                             <img class="img-fluid" src="./src/img/durodematar.jpg" />
                             <p class="nome-filme">Duro de Matar</p>
                             <button class="botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -267,7 +263,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('Gladiator')">
+                        <li class="filme" onclick="apiFilme('tt0172495')">
                             <img class="img-fluid" src="./src/img/gladiador.jpg" />
                             <p class="nome-filme">Gladiador</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -285,7 +281,7 @@
                         </li>
     
                         
-                        <li class="filme" onclick="apiFilme('Inglourious Basterds')">
+                        <li class="filme" onclick="apiFilme('tt0361748')">
                             <img class="img-fluid" src="./src/img/bastardosinglorios.jpg" />
                             <p class="nome-filme">Bastardos Inglórios</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -319,7 +315,7 @@
                 <div class="col-12">
                     <ul class="filme_lista">
     
-                        <li class="filme" onclick="apiFilme('Carrie')">
+                        <li class="filme" onclick="apiFilme('tt0074285')">
                             <img class="img-fluid"src="./src/img/carrie.jpg" />
                             <p class="nome-filme">Carrie, a estranha</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -336,7 +332,7 @@
                             </div>
                         </li>
     
-                        <li class="filme"  onclick="apiFilme('Friday the 13th')">
+                        <li class="filme"  onclick="apiFilme('tt0080761')">
                             <img class="img-fluid"  src="./src/img/sextafeira13.jpg">
                             <p class="nome-filme">Sexta Feira 13</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -353,7 +349,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('The Sixth Sense')">
+                        <li class="filme" onclick="apiFilme('tt0167404')">
                             <img class="img-fluid" src="./src/img/sextosentido.jpg" />
                             <p class="nome-filme">O Sexto Sentido</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -370,7 +366,7 @@
                             </div>
                         </li>
     
-                        <li class="filme" onclick="apiFilme('The Exorcism of Emily Rose')">
+                        <li class="filme" onclick="apiFilme('tt0404032')">
                             <img class="img-fluid" src="./src/img/oexorcismo.jpg" />
                             <p class="nome-filme">O exorcismo de Emily Rose</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -388,7 +384,7 @@
                         </li>
     
                         
-                        <li class="filme" onclick="apiFilme('Jaws')">
+                        <li class="filme" onclick="apiFilme('tt0073195')">
                             <img class="img-fluid" src="./src/img/tubarão.jpg" />
                             <p class="nome-filme">Tubarão</p>
                             <button class=" botao-filme bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
@@ -410,7 +406,7 @@
 
     
 
-    <footer class="rodape">
+    <footer class="rodape" id="rodape">
         <a id="contato" href="">&copy; Copyright - Resilia 2021 T11</a>
     </footer>
  
@@ -422,9 +418,8 @@
         crossorigin="anonymous">
     </script>
 
-    <script src="src/js/controller/paginainicial-omdb-api.js"></script>
-    <script src="src/js/model/requisicaoapi.js"></script>
-    <script src="src/js/view/renderizando-api.js"></script>
+    <script src="src/js/controller/paginainicial-controller.js"></script>
+    <script src="src/js/view/paginainicial-view.js"></script>
 
 </body>
 </html>

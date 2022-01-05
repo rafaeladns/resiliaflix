@@ -65,6 +65,7 @@ strong{
     display: flex;
     justify-content: space-around;
     
+    
 }
 
 .card-text{
@@ -157,11 +158,13 @@ strong{
 
 .card{
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .card:hover{
     border: 5px solid #FFD000;
     cursor: pointer;
+    
 }
 
 h5{
